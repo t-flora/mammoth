@@ -7,7 +7,7 @@ export default function NavBar() {
         <nav className={styles.nav}>
             <Link href={'/'}>
                 <Image 
-                    src={'../public/next.svg'}
+                    src='/next.svg'
                     width={216}
                     height={30}
                     alt='Mammoth-Next logo'
