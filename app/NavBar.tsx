@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NavBar.module.css';
+import { SignInButton, SignOutButton } from '@/components/authButtons';
+import AuthCheck from '@/components/AuthCheck';
 
 export default function NavBar() {
     return (
@@ -24,7 +26,12 @@ export default function NavBar() {
                     <Link href={'/users'}>users</Link>
                 </li>
                 <li>
-                    {/* Future button */}
+                    <SignInButton />
+                </li>
+                <li>
+                    <AuthCheck>
+                        <SignOutButton />
+                    </AuthCheck>
                 </li>
             </ul>
         </nav>
