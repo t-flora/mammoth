@@ -26,6 +26,9 @@ export default function NavBar() {
                     <Link href={'/users'}>users</Link>
                 </li>
                 <li>
+                    <Link href={'/dashboard'}>dashboard</Link>
+                </li>
+                <li>
                     <SignInButton />
                 </li>
                 <li>
